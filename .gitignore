@@ -1,68 +1,119 @@
-# Dependency directories
+# ==========================================
+# DEPENDENCY DIRECTORIES
+# ==========================================
 node_modules/
 jspm_packages/
 web_archiver/
 /frontend
 
-
-# Environment files
+# ==========================================
+# ENVIRONMENT & CONFIGURATION
+# ==========================================
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+.env.*.local
+
+# Python Virtual Environments
 env/
 venv/
 .venv/
+ENV/
+VENV/
 
-# Hyperledger Fabric artifacts
+# ==========================================
+# UPLOADS & TEMPORARY FILES
+# ==========================================
+uploads/
+backend/uploads/
+
+# ==========================================
+# HYPERLEDGER FABRIC ARTIFACTS
+# ==========================================
 blockchain/organizations/
 blockchain/network/system-genesis-block/
 blockchain/network/channel-artifacts/
-blockchain/network/organizations/
 blockchain/tests/test-network/organizations/
 blockchain/tests/test-network/bin/
 blockchain/tests/test-network/config/
 blockchain/tests/test-network/builders/
 blockchain/tests/test-network/system-genesis-block/
 blockchain/tests/test-network/log.txt
+blockchain/bin/
+blockchain/builders/
+blockchain/monitoring/
+
+# Blockchain generated files
 *.tar.gz
 *.block
 *.tx
 
-# Outils de tests privés (gardés en local uniquement)
+# ==========================================
+# TEST FILES (Local testing only)
+# ==========================================
 backend/scripts/test_all_flows.py
 backend/tests/
 blockchain/scripts/test-transactions.sh
+blockchain-test/
 
-# Logs
+# ==========================================
+# BUILD & DIST ARTIFACTS
+# ==========================================
+dist/
+build/
+*.dist
+blockchain/chaincode/dist/
+blockchain/chaincode/node_modules/
+blockchain/gateway/node_modules/
+
+# ==========================================
+# LOGS
+# ==========================================
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# Python
+# ==========================================
+# PYTHON
+# ==========================================
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
 .pytest_cache/
 .coverage
 htmlcov/
+*.egg-info/
+dist/
+build/
 
-# OS/IDE files
+# ==========================================
+# OS & IDE FILES
+# ==========================================
 .DS_Store
-.vscode/
-.idea/
 Thumbs.db
 *.db
+*.sqlite
+*.sqlite3
 
-# Chaincode build artifacts
-blockchain/chaincode/dist/
-blockchain/chaincode/node_modules/
+# IDE Specific
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
 
-backend/uploads/
-
-blockchain/bin/
-blockchain/builders/
-blockchain-test/test-network/log.txt
-blockchain-test/test-network/log.txt
+# ==========================================
+# PACKAGE MANAGER LOCK FILES (Optional)
+# ==========================================
+# Uncomment if you want to ignore lock files
+# pnpm-lock.yaml
+# package-lock.json
