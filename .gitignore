@@ -61,9 +61,12 @@ blockchain-test/
 # ==========================================
 # BUILD & DIST ARTIFACTS
 # ==========================================
+bin/
 dist/
 build/
 *.dist
+*.exe
+*.bin
 blockchain/chaincode/dist/
 blockchain/chaincode/node_modules/
 blockchain/gateway/node_modules/
