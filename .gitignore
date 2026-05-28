@@ -5,6 +5,8 @@ node_modules/
 jspm_packages/
 web_archiver/
 /frontend
+web/
+mobile/
 
 # ==========================================
 # ENVIRONMENT & CONFIGURATION
